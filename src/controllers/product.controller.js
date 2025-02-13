@@ -19,7 +19,7 @@ const getProductById = async (req, res) => {
 
     try {
 
-        const { id } = req.param;
+        const { id } = req.params;
         const productFiltered = await ProductManager.getProductById(id);
         res.json(productFiltered);
 
