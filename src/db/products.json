@@ -1,0 +1,36 @@
+[
+    {
+        "id": 1,
+        "title": "tijera",
+        "description": "Tijera de acero inoxidable marca simball",
+        "code": "AA111",
+        "price": 34,
+        "status": true,
+        "stock": 5,
+        "category": "escolar",
+        "thumbnails": "../img/tijera.png"
+    },
+    {
+        "id": 2,
+        "title": "regla",
+        "description": "regla plastica marca pelikan",
+        "code": "AA112",
+        "price": 10,
+        "status": false,
+        "stock": 2,
+        "category": "escolar",
+        "thumbnails": "../img/regla.png"
+    },
+    {
+        "id": 3,
+        "title": "goma",
+        "description": "Goma de caucho marca faber castell",
+        "code": "AA113",
+        "price": 5,
+        "status": true,
+        "stock": 20,
+        "category": "escolar",
+        "thumbnails": "../img/goma.png"
+    }
+
+]
