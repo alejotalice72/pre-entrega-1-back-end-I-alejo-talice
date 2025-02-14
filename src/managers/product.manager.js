@@ -54,10 +54,33 @@ class ProductManager {
 
     }
 
-    static async updateProduct (id, { title, description, code, price, status, stock, category, thumnails }) {
+    static async updateProduct ({ id, title, description, code, price, status, stock, category, thumbnails }) {
+        
+        if (id) {
+            const data = await fs.promises.readFile(productsFilePath,'utf8');
+            const products = JSON.parse(data);
+            // search index
+            const productIndex = products.findIndex((product)=>{ return product.id === id });
+            // verify props and replace info         
+            title ? products[productIndex].title = title : products[productIndex].title;
+            description ? products[productIndex].description = description : products[productIndex].description;
+            code ? products[productIndex].code = code : products[productIndex].code;
+            price >= 0 ? products[productIndex].price = price : products[productIndex].price;
+            status != undefined ? products[productIndex].status = status : products[productIndex].status;
+            stock >= 0 ? products[productIndex].stock = stock : products[productIndex].stock;
+            category ? products[productIndex].category = category : products[productIndex].category;
+            thumbnails ? products[productIndex].thumbnails = thumbnails : products[productIndex].thumbnails;
+            // Transform to json
+            fs.promises.writeFile(productsFilePath, JSON.stringify(products));
 
+            return { message: "Producto actualizado correctamente" };
+        
+        } else {
 
-
+            return { message: "Debe enviar el ID del producto que quiere modificar" };
+        
+        }
+    
     }
 
     static async deleteProduct () {

@@ -47,7 +47,19 @@ const createProduct = async (req, res) => {
 
 };
 
-const updateProduct = async () => {
+const updateProduct = async (req, res) => {
+
+    try {
+        
+        const info = req.body;
+        const response = await ProductManager.updateProduct(info);
+        res.json(response);
+
+    } catch (error) {
+
+        res.status(500).json({ message: error.message });
+
+    }
 
 };
 
