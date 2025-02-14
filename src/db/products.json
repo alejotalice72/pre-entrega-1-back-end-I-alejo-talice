@@ -3,7 +3,7 @@
         "title": "tijera",
         "description": "Tijera de acero inoxidable marca simball",
         "code": "AA111",
-        "price": 34,
+        "price": 8000,
         "status": true,
         "stock": 5,
         "category": "escolar",
@@ -11,23 +11,23 @@
         "id": 1
     },
     {
-        "title": "regla",
-        "description": "regla plastica marca pelikan",
-        "code": "AA112",
-        "price": 10,
-        "status": true,
-        "stock": 2,
+        "title": "goma",
+        "description": "Goma de cuero pelikan",
+        "code": "AA113",
+        "price": 5,
+        "status": false,
+        "stock": 0,
         "category": "escolar",
-        "thumbnails": "../img/regla.png",
-        "id": 2
+        "thumbnails": "../img/goma.png",
+        "id": 3
     },
     {
         "title": "goma",
-        "description": "Goma de caucho marca faber castell",
+        "description": "Goma de cuero pelikan",
         "code": "AA113",
         "price": 5,
-        "status": true,
-        "stock": 20,
+        "status": false,
+        "stock": 0,
         "category": "escolar",
         "thumbnails": "../img/goma.png",
         "id": 3
@@ -42,16 +42,5 @@
         "category": "escolar",
         "thumbnails": "../img/cuaderno.png",
         "id": 4
-    },
-    {
-        "title": "cartuchera",
-        "description": "cartuchera de caucho marca simball",
-        "code": "AA120",
-        "price": 120,
-        "status": false,
-        "stock": 3,
-        "category": "escolar",
-        "thumbnails": "../img/cartuchera-simball.png",
-        "id": 5
     }
 ]

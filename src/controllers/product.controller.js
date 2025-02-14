@@ -50,9 +50,10 @@ const createProduct = async (req, res) => {
 const updateProduct = async (req, res) => {
 
     try {
-        
+
+        const { id } = req.params;
         const info = req.body;
-        const response = await ProductManager.updateProduct(info);
+        const response = await ProductManager.updateProduct(id, info);
         res.json(response);
 
     } catch (error) {
@@ -63,7 +64,19 @@ const updateProduct = async (req, res) => {
 
 };
 
-const deleteProduct = async () => {
+const deleteProduct = async (req, res) => {
+    
+    try {
+
+        const { id } = req.params;
+        const response = await ProductManager.deleteProduct(id); 
+        res.json(response);
+    
+    } catch (error) {
+
+        res.status(500).json({ message: error.message });
+
+    }
 
 };
 
