@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "title": "tijera",
         "description": "Tijera de acero inoxidable marca simball",
         "code": "AA111",
@@ -8,10 +7,10 @@
         "status": true,
         "stock": 5,
         "category": "escolar",
-        "thumbnails": "../img/tijera.png"
+        "thumbnails": "../img/tijera.png",
+        "id": 1
     },
     {
-        "id": 2,
         "title": "regla",
         "description": "regla plastica marca pelikan",
         "code": "AA112",
@@ -19,10 +18,10 @@
         "status": false,
         "stock": 2,
         "category": "escolar",
-        "thumbnails": "../img/regla.png"
+        "thumbnails": "../img/regla.png",
+        "id": 2
     },
     {
-        "id": 3,
         "title": "goma",
         "description": "Goma de caucho marca faber castell",
         "code": "AA113",
@@ -30,7 +29,29 @@
         "status": true,
         "stock": 20,
         "category": "escolar",
-        "thumbnails": "../img/goma.png"
+        "thumbnails": "../img/goma.png",
+        "id": 3
+    },
+    {
+        "title": "cuaderno",
+        "description": "Cuaderno A4 de 50 hojas",
+        "code": "AA114",
+        "price": 50,
+        "status": true,
+        "stock": 10,
+        "category": "escolar",
+        "thumbnails": "../img/cuaderno.png",
+        "id": 4
+    },
+    {
+        "title": "cartuchera",
+        "description": "cartuchera de caucho marca simball",
+        "code": "AA120",
+        "price": 120,
+        "status": true,
+        "stock": 3,
+        "category": "escolar",
+        "thumbnails": "../img/cartuchera-simball.png",
+        "id": 5
     }
-
 ]

@@ -31,7 +31,19 @@ const getProductById = async (req, res) => {
 
 };
 
-const createProduct = async () => {
+const createProduct = async (req, res) => {
+    
+    try {
+
+        const newProduct = req.body;
+        const product = await ProductManager.addProduct(newProduct);
+        res.json(product);
+        
+    } catch (error) {
+
+        res.status(500).json({ message: error.message });
+
+    }
 
 };
 
