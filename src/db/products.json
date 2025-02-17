@@ -12,24 +12,24 @@
     },
     {
         "title": "goma",
-        "description": "Goma de cuero pelikan",
+        "description": "goma de caucho marca pelikan",
         "code": "AA113",
         "price": 5,
         "status": false,
         "stock": 0,
         "category": "escolar",
         "thumbnails": "../img/goma.png",
-        "id": 3
+        "id": 2
     },
     {
-        "title": "goma",
-        "description": "Goma de cuero pelikan",
-        "code": "AA113",
+        "title": "Block de hojas",
+        "description": "block de 50 hojas A4 marca rivadavia",
+        "code": "AA124",
         "price": 5,
-        "status": false,
-        "stock": 0,
+        "status": true,
+        "stock": 11,
         "category": "escolar",
-        "thumbnails": "../img/goma.png",
+        "thumbnails": "../img/block-hojas-rivadavia.png",
         "id": 3
     },
     {
