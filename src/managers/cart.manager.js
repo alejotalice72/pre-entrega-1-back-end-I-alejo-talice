@@ -13,20 +13,19 @@ class CartManager {
         const carts = JSON.parse(data);
         const [{ products }] = carts.filter((cart) => { return cart.id == id });
         const fillProduct = async () => {
-             
-        
-            const list = await products.map(async (pro) => {
-                const [productId] = await ProductManager.getProductById(pro.product);
-                console.log(products);
-                return {...productId};
-            });
             
-            console.log(list);
-            return list;
+            return Promise.all(
+                products.map(async (pro) => {
+                const [productId] = await ProductManager.getProductById(pro.product);
+                pro.product = productId;
+                return pro;
+            })
+            );
+        
         }; 
-        
+
         return fillProduct();
-        
+
     };
 
 }

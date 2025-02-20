@@ -15,8 +15,8 @@
     {
         "products": [
             {
-                "product": 3,
-                "quantity": 1
+                "product": 1,
+                "quantity": 5
             }
         ],
         "id": 2
