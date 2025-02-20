@@ -16,6 +16,39 @@ const getProductsCart = async (req, res) => {
 
 };
 
+const createCarts = async (req, res) => {
+    
+    try {
+
+        const createCarts = await CartManager.createCart();
+        res.json(createCarts);
+
+    } catch (error) {
+
+        res.status(500).json({ message: error.message })
+    
+    }
+
+};
+
+const addProductToCart = async (req, res) => {
+
+    try {
+
+        const { id, productId } = req.params;
+        const addProductCart = await CartManager.addProductToCart(id, productId);
+        res.json(addProductCart);
+
+    } catch (error) {
+
+        res.status(500).json({ message: error.message });
+
+    }
+
+};
+
 module.exports = {
     getProductsCart,
+    createCarts,
+    addProductToCart,
 };
